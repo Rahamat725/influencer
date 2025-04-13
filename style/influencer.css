@@ -10,6 +10,8 @@ body{
     font-family: "Poppins", sans-serif;
     max-width: 1366px;
     margin: 0 auto;
+    /* visibility: hidden; */
+    /* background: rgb(170, 170, 170); */
 }
 
 *{
@@ -88,6 +90,7 @@ body{
     align-items: center; */
     background-image: url("..//images/Circle\ design.svg");
     /* background-position: top left; */
+    background-size: cover;
     
 }
 .hero-img-content div{
@@ -96,4 +99,56 @@ body{
 .hero-img-content img{
     width: 100%;
     
+}
+
+.divider{
+    margin-top: 50px;
+    background: linear-gradient(135.00deg,
+     rgba(192, 204, 218, 0.1) 0%,
+     rgba(192, 204, 218, 0.6) 50.378%,
+     rgba(192, 204, 218, 0.1) 100%);
+}
+
+
+
+/* Responsive related style */
+
+/* for small device */
+@media screen and (max-width:576px) {
+    .nav-content{
+        /* display: none; */
+        flex-direction: column;
+    }
+    .nav-items{
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+
+    .hero-content{
+        flex-direction: column-reverse;
+    
+    }
+  .hero-title-content{
+    width: 90%;
+    text-align: center;
+    margin-top: 50px;
+  }
+  .hero-title{
+    font-size: 28px;
+    line-height: 42px;
+  }
+  
+  .hero-description{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+  }
+
+  .hero-img-content{
+    /* background-size:cover; */
+  }
+
+
+
 }
