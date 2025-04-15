@@ -4,6 +4,8 @@
 /* color set using variable */
 :root{
     --primaryColor: rgb(58, 58, 58);
+    --titleColor: rgb(24, 25, 31);
+    --priceColor: rgba(0, 0, 0, 0.87);
 }
 
 body{
@@ -119,6 +121,63 @@ body{
      rgba(192, 204, 218, 0.1) 100%);
 }
 
+/* Popular Collection section */
+.popular-collection > h3{
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--primaryColor);
+    margin-top: 100px;
+    text-align: center;
+}
+
+.collection-content{
+    margin-top: 30px;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    
+}
+.collection-box{
+    padding: 15px;
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+     box-shadow:  0 6px 6px hsl(0deg 0% 0% / 0.3);
+}
+.img-box{
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.img-box img{
+    width: 100%;
+}
+
+.collection-details{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.collection-title{
+    margin-top: 15px;
+    color: var(--titleColor);
+    font-size: 28px;
+    font-weight: 500;
+}
+.collection-price{
+    color: var(--priceColor);
+    font-size: 24px;
+    font-weight: 400;
+}
+.rating{
+    color: rgb(251, 130, 0);
+}
+.collection-description{
+   width: 70%;
+   font-size: 14px;
+   font-weight: 700;
+   color: rgb(120, 120, 133);
+   
+}
 
 
 /* Responsive related style */
@@ -134,7 +193,7 @@ body{
         margin-top: 30px;
     }
 
-
+         /* Hero Section responsive */
     .hero-content{
         flex-direction: column-reverse;
     
@@ -172,11 +231,30 @@ body{
     
 }
 
+/* Popular Collection responsive */
+
+.collection-content{
+    grid-template-columns: repeat(1, 1fr);
+
+}
+.collection-title{
+    font-weight: 700;
+}
+.collection-price{
+    font-weight: 700;
+}
+.collection-description{
+    /* font-weight: 400; */
+}
+
 }
 
 /* Responsive for medium device */
 
 @media screen and (min-width:577px) and (max-width:768px){
+    body{
+        width: 95%;
+    }
     .nav-content{
         /* display: none; */
         flex-direction: column;
@@ -220,5 +298,30 @@ body{
     
 }
 
+/* Popular Collection responsive */
 
+.collection-content{
+    grid-template-columns: repeat(2, 1fr);
+
+}
+.collection-title{
+    font-weight: 700;
+}
+.collection-price{
+    font-weight: 700;
+}
+.collection-description{
+    font-weight: 400;
+}
+
+
+}
+
+
+/* responsive for 769 to 1365 */
+@media screen and (min-width:769px) and (max-width:1365px){
+    body{
+        width: 90%;
+    }
+    
 }
