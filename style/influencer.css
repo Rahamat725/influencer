@@ -179,6 +179,62 @@ body{
    
 }
 
+.see-more{
+    display: flex;
+     justify-content: right;
+     margin-top: 50px;
+}
+.see-more button {
+    color:  rgba(224, 44, 109, 0.87);
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    background:none;
+}
+
+
+/* Features Product section */
+
+.features-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.features-container{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    
+}
+.img-container img{
+    width: 100%;
+}
+.features-title{
+    font-size: 38px;
+    font-weight: 700;
+    accent-color: rgb(10, 8, 38);
+}
+.features-description{
+    width: 80%;
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(108, 108, 108);
+}
+
+.btn-join{
+    background-color: rgb(224, 44, 109);
+    padding: 10px 24px;
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    border: none;
+}
+.btn-arow{
+    margin-left: 10px;
+}
 
 /* Responsive related style */
 
@@ -245,6 +301,26 @@ body{
 }
 .collection-description{
     /* font-weight: 400; */
+}
+
+/* Features product section */
+
+.features-content{
+    width: 95%;
+    margin:50px auto;
+    flex-direction: column-reverse;
+    gap: 50px;
+}
+.features-container{
+    width: 100%;
+    text-align: center;
+    
+}
+.features-title{
+    font-size: 24px;
+}
+.features-description{
+    width: 95%;
 }
 
 }
@@ -315,13 +391,71 @@ body{
 }
 
 
+.see-more{
+    display: none;
 }
+
+/* Features product section */
+
+.features-content{
+    width: 95%;
+    margin:50px auto;
+    flex-direction: column-reverse;
+    gap: 50px;
+}
+.features-container{
+    width: 100%;
+    text-align: center;
+    
+}
+.features-title{
+    font-size: 24px;
+}
+.features-description{
+    width: 95%;
+}
+
+}
+
 
 
 /* responsive for 769 to 1365 */
 @media screen and (min-width:769px) and (max-width:1365px){
     body{
         width: 90%;
+
     }
+    .hero-title{
+        font-size: 30px;
+        line-height: 50px;
+    }
+
+    .hero-description{
+       width: 90%;
+    }
+
+
+    /* Features product section */
+    
+
+    .features-container{
+        text-align: center;
+    }
+    .features-title{
+        font-size: 30px;
+    }
+    .features-description{
+        text-align: justify;
+        margin: auto;
+    }
+    
+
+  
+}
+   
+
+     
+
+
     
 }
